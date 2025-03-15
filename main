@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double a,b,h;
+	const double PI = 3.14159; 
+	cout << "실수 3개를 입력하세요: ";
+	cin >> a >> b >> h;
+	
+	double trapezoid_area = 0.5 * (a+b) * h;
+	cout << "밑변" << a << ",윗변" << b << ",높이" << h <<"인 사다리꼴의 넓이는 " << trapezoid_area << endl;
+	
+	double circle_area = PI * a * a; 
+	cout << "반지름" << a << "인 원의 넓이는" << circle_area << endl;
+	
+	double cylinder_volume = PI * a * a * h;
+	cout << "반지름" << a << ",높이" << h << "인 원기둥의 부피는 " << cylinder_volume << endl; 
+	
+	return 0;
+}
