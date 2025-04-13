@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  long long seconds;
+  cout << "초 입력: ";
+  cin >> seconds;
+  cout << seconds /3600 << "시간" << (seconds % 3600) / 60 << "분" << seconds % 60 << "초입니다." << endl;
+
+  return 0;
+}
